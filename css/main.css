@@ -1,0 +1,300 @@
+/******** GLOBAL STYLES ********/
+html {
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  /*font-size: 16px;*/
+  font-size: 0.9em;
+  color: #000000;
+}
+
+/* The width property has been changed to max-width */
+.content-wrapper {
+  max-width: 1200px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  /*margin: 0 auto;*/
+  /*overflow: auto;*/
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1 {
+  /*font-size: 30px;*/
+  /*font: size 1.875rem;*/
+  font: size 1.875rem;
+}
+
+h2 {
+  /*font-size: 24px;*/
+  /*font-size: 1.5rem;*/
+  font: size 1.5rem;
+}
+
+h3 {
+  /*font-size: 20px;*/
+  /*font-size: 1.25rem;*/
+  font-size: 1.25rem;
+}
+
+h4 {
+  /*font-size: 12px;*/
+  /*font-size: 0.75rem;*/
+  font-size: 0.75rem;
+}
+
+p {
+  line-height: 36px;
+  /*font-size: 2.25rem;*/
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/******** HEADER STYLES ********/
+/* The widths are in a percentage! */
+header {
+  /*height: 110px;*/
+  /*margin: 0 auto;*/
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+header h1 {
+  width: 100%;
+  margin: 0px;
+<<<<<<< HEAD
+  padding: 10px 0;
+=======
+  padding: 15px 0;
+>>>>>>> 3c556080227365a681cb67db119cfd0ecab425da
+  /*padding: 30px 0;*/
+  border-bottom: 3px solid #77a466;
+}
+
+header h1 span {
+  color: #45610e;
+}
+
+header nav {
+  /*padding: 46px 0;*/
+  padding: 23px 0px;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-decoration: none;
+}
+
+header nav ul li {
+  display: flex;
+  /*display: inline-block;*/
+  /*font-size: 14px;*/
+  font-weight: 700;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  padding: 10px 0 15px 0px;
+  justify-content: center;
+  /*padding:10px ;*/
+  align-items: center;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #45610e;
+}
+
+/********  MAIN STYLES ********/
+/******** TOP SECTION ********/
+/* The widths are in a percentage! */
+.main-image img {
+  width: 100%;
+  border-top: 3px solid #77a466;
+  border-bottom: 3px solid #77a466;
+}
+
+.main-title h2 {
+  color: #45610e;
+  /*padding: 5px 0;*/
+}
+
+/******** BOTTOM SECTION ********/
+.top-section,
+.bottom-section {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-section .content-wrapper {
+  border-top: 5px solid #eee;
+  border-bottom: 5px solid #eee;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  box-sizing: border-box;
+  /*padding: 0 40px;*/
+  padding: 0px;
+  margin: 0px;
+}
+
+.section-one {
+  /*width: 29%;*/
+  width: 100%;
+}
+
+.section-two {
+  /*width: 42%;*/
+  width: 100%;
+  border-top: 5px solid #eee;
+  border-bottom: 5px solid #eee;
+  /*border-left: 5px solid #eee;
+  border-bottom: 5px solid #eee;*/
+}
+
+.section-three {
+  /*width: 29%;*/
+  width: 100%;
+}
+
+.bottom-section h3 {
+  margin: 30px 0;
+}
+
+.menu-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.menu-list li {
+  color: #45610e;
+  font-size: 16px;
+  line-height: 36px;
+}
+
+/******** FOOTER STYLES ********/
+/* The widths are in a percentage! */
+footer {
+  text-align: center;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+footer span {
+  font-family: "Galada", cursive;
+  text-transform: lowercase;
+  color: #45610e;
+  font-size: 14px;
+}
+
+/****************************
+****************************
+****************************
+**************************
+******************************
+Media Sections for Tablet 
+****************************
+******************************
+*******************************
+****************************
+****************************
+****************************/
+
+@media all and (min-width: 768px) {
+  /* Tablet styles here */
+
+  .bottom-section .content-wrapper {
+    justify-content: space-evenly;
+  }
+
+  .section-one {
+    width: 29%;
+    /*width:26%;*/
+  }
+
+  .section-two {
+    width: 42%;
+    border-left: 5px solid #eee;
+    border-right: 5px solid #eee;
+    padding: 0 30px;
+    border-top: none;
+    border-bottom: none;
+    /*.section-two {
+      width: 40%;
+    
+    }*/
+  }
+
+  .section-three {
+    width: 29%;
+    /*width:26%;*/
+  }
+}
+/****************************
+****************************
+****************************
+**************************
+******************************
+Media Sections  Desktop
+****************************
+******************************
+*******************************
+****************************
+****************************
+****************************/
+
+@media all and (min-width: 1200px) {
+  /****Desktop styles here ***/
+
+  body {
+  
+		font-size: 1em;
+	}
+
+  header h1 {
+    width:30% ;
+    padding: 0;
+    border-bottom:none  ;
+    text-align:left5;
+  }
+  /*
+	header h1 {
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
+	}
+*/
+  header nav {
+    width: 21%;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .content-wrapper {
+    justify-content: space between;
+    align-items: center;
+    padding: 20px 0;
+  }
+*3
+}
